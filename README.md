@@ -15,13 +15,14 @@ This project demonstrates practical skills in:
 
 By analyzing the timestamp logs from the event collector (`host = 10.10.161.89:8989`), the attack sequence was reconstructed chronologically:
 
-```text
+```
  - Initial Inbound Phishing email arrives at j.garcia@thetrydaily.thm (HR-Theme)
-      │
+      
  - User (j.garcia) sends a legitimate internal email (Confirms active session)
-      │
+      
  - Endpoint 10.20.2.17 (j.garcia) triggers HIGH alert: Firewall blocks malicious short URL (bit.ly)
-      │
+      
  - Second Inbound Phishing email hits c.allen@thetrydaily.thm (IT/Microsoft Typosquatting Theme)
-      │
+      
  - Account Takeover Confirmed: j.garcia's account starts automated internal spamming to itself
+```
